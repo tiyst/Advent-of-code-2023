@@ -1,14 +1,15 @@
-package first;
+package dayOne;
 
 import utils.FileUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Map;
 
 public class First {
 
 	public static void main(String[] args) throws IOException {
-		String fileName = System.getProperty("user.dir") + "/src/first/input.txt";
+		String fileName = "/dayOne/input.txt";
 
 		BufferedReader br = FileUtils.getStreamFromFile(fileName);
 		String line;
@@ -21,5 +22,11 @@ public class First {
 
 		System.out.println(result);
 	}
+
+//	public String resolveSpelledOutNumbers(String line) {
+//		spelledOut.keySet().stream()
+//				.filter(line::contains)
+//				.
+//	}
 
 }
