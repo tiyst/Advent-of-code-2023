@@ -1,4 +1,4 @@
-package dayOne;
+package day1;
 
 import utils.FileUtils;
 
@@ -6,10 +6,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Map;
 
-public class First {
+public class dayOne {
+
+	private Map<String, Integer> spelledOut = Map.of(
+			"one", 1,
+			"two", 2,
+			"three", 3,
+			"four", 4,
+			"five", 5,
+			"six", 6,
+			"seven", 7,
+			"eight", 8,
+			"nine", 9);
 
 	public static void main(String[] args) throws IOException {
-		String fileName = "/dayOne/input.txt";
+		String fileName = "/day1/input.txt";
 
 		BufferedReader br = FileUtils.getStreamFromFile(fileName);
 		String line;

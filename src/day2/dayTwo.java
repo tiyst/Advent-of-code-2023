@@ -1,4 +1,4 @@
-package dayTwo;
+package day2;
 
 import utils.FileUtils;
 
@@ -18,7 +18,7 @@ public class dayTwo {
 	);
 
 	public static void main(String[] args) throws IOException {
-		String fileName = "/dayTwo/input.txt";
+		String fileName = "/day2/input.txt";
 
 		BufferedReader br = FileUtils.getStreamFromFile(fileName);
 		String line;
